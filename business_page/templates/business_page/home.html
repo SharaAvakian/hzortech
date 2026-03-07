@@ -1,0 +1,26 @@
+{% extends "business_page/base.html" %}
+
+{% block title %}Home | HzorTech{% endblock %}
+
+{% block content %}
+<div class="text-center my-5">
+    <h1 class="display-4">Welcome to HzorTech</h1>
+    <p class="lead">We provide technology solutions, IT services, and application development for businesses of all sizes.</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+</div>
+
+<div class="row text-center my-5">
+    <div class="col-md-4">
+        <h3>IT Services</h3>
+        <p>Reliable systems administration, networking, and support for your business.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Application Development</h3>
+        <p>Custom software solutions tailored to your business needs.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Consulting</h3>
+        <p>Expert advice and strategies to improve your IT infrastructure.</p>
+    </div>
+</div>
+{% endblock %}

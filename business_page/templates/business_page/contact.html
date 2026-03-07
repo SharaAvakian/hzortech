@@ -1,0 +1,45 @@
+{% extends "business_page/base.html" %}
+
+{% block title %}Contact | HzorTech{% endblock %}
+
+{% block content %}
+<div class="text-center my-5">
+    <h1 class="display-4">Contact Us</h1>
+    <p class="lead">Have questions or want to work with us? Send us a message below.</p>
+</div>
+
+<div class="row justify-content-center my-5">
+    <div class="col-md-6">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <div class="mb-3">
+                {{ form.name.label_tag }}
+                {{ form.name }}
+                {{ form.name.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+                {{ form.email.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.subject.label_tag }}
+                {{ form.subject }}
+                {{ form.subject.errors }}
+            </div>
+
+            <div class="mb-3">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+                {{ form.message.errors }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
