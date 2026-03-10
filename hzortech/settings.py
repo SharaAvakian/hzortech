@@ -23,11 +23,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z*&qc3$p!j3n2e)-m$45)wd4m+8c=&-$h-e0r*de60hbql9peh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["hzortech.com",
+    "www.hzortech.com",
+    "0.0.0.0",
+    "127.0.0.1",
+    "localhost"]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://hzortech.com",
+    "https://www.hzortech.com"
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +48,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -116,3 +124,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "staticfiles" 
