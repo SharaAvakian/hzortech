@@ -1,102 +1,244 @@
 {% extends "business_page/base.html" %}
-
 {% block title %}About | HzorTech{% endblock %}
 
 {% block content %}
-<div class="text-center my-5">
-    <h1 class="display-4">About HzorTech</h1>
-    <p class="lead">HzorTech was built from the expertise of Shara Avakian, a cybersecurity and cloud engineer with hands-on experience building secure, enterprise-grade systems for banking, high-performance compute research, and global IT support.</p>
-</div>
 
-<div class="row my-5">
-    <div class="col-md-6">
-        <h3>Our Mission</h3>
-        <p>Deliver practical, secure technology services that reduce risk, automate operations, and support growth for small and medium enterprises.</p>
+<!-- ── Hero ── -->
+<section class="mb-5 fade-up">
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+            <div class="section-label">About</div>
+            <h1 class="display-4 mb-3">Built on real engineering experience</h1>
+            <p class="lead">
+                HzorTech was founded by Shara Avakian — a cloud and cybersecurity engineer
+                who spent years working on live banking systems, high-performance compute infrastructure,
+                and large-scale endpoint security before starting this.
+            </p>
+        </div>
     </div>
-    <div class="col-md-6">
-        <h3>Our Vision</h3>
-        <p>Become a trusted partner for clients who need cloud engineering, cybersecurity, and resilient operations, drawing from real-world finance and research infrastructure experience.</p>
+</section>
+
+<hr class="hz-divider">
+
+<!-- ── Mission + Vision ── -->
+<section class="mb-5">
+    <div class="row gy-4">
+        <div class="col-md-6 fade-up">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="icon-circle mb-3"><i class="bi bi-bullseye"></i></div>
+                    <h5 class="card-title mb-2">Mission</h5>
+                    <p class="card-text">
+                        Deliver practical, secure technology services to small and medium businesses
+                        that need cloud and security expertise but don't have a dedicated team for it.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 fade-up" style="transition-delay:0.07s">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="icon-circle mb-3"><i class="bi bi-eye"></i></div>
+                    <h5 class="card-title mb-2">Vision</h5>
+                    <p class="card-text">
+                        Become a trusted long-term technical partner for clients in finance, research,
+                        and enterprise IT — sectors where reliability and security aren't optional.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="my-5">
-    <h3>Founders & Early Identity</h3>
-    <p>Shara Avakian founded the company after roles as a junior cloud engineer at a national research institute, a security and QA specialist at Senex Security, and technical support for banking workflow systems at Golden SB-Tech. HzorTech is intentionally lean, agile, and customer-focused.</p>
-</div>
+<hr class="hz-divider">
 
-<div class="row my-5">
-    <div class="col-md-4">
-        <h4>Company Values</h4>
-        <ul>
-            <li>Integrity in security and data handling</li>
-            <li>Timely delivery with measurable impact</li>
-            <li>Data-backed decisions and continuous improvement</li>
-            <li>Collaboration and transparent communication</li>
-        </ul>
+<!-- ── Founder ── -->
+<section class="mb-5 fade-up">
+    <div class="row align-items-start gy-4">
+        <div class="col-lg-4">
+            <div class="section-label">Founder</div>
+            <h2 class="mb-1">Shara Avakian</h2>
+            <p style="color:var(--muted); font-size:0.85rem; margin-bottom:1rem;">Principal Engineer &amp; Founder</p>
+            <p>
+                Shara has worked as a junior cloud engineer at IIAP (a national research institute),
+                a security and QA specialist at Senex Security, and in technical support for banking
+                workflow systems at Golden SB-Tech. He started HzorTech to take on direct client work
+                in those same domains.
+            </p>
+            <p>
+                He holds a degree in computer science from an Armenian university and is currently
+                completing a Master's in computer systems.
+            </p>
+            <div class="mt-3">
+                <span class="chip">Cloud Engineering</span>
+                <span class="chip">Blue Team Security</span>
+                <span class="chip">DevOps</span>
+                <span class="chip">Python</span>
+                <span class="chip">Bash</span>
+                <span class="chip">PowerShell</span>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="row gy-3">
+                <div class="col-12 fade-up" style="transition-delay:0.05s">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-building"></i></div>
+                                <div>
+                                    <div class="card-title mb-1">IIAP — National Research Institute</div>
+                                    <p class="card-text mb-0">
+                                        Junior cloud engineer delivering Python-based compute services,
+                                        SaaS platform integration, and HPC scheduling for quantum simulation workloads.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 fade-up" style="transition-delay:0.1s">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-shield"></i></div>
+                                <div>
+                                    <div class="card-title mb-1">Senex Security</div>
+                                    <p class="card-text mb-0">
+                                        Security and QA specialist. Worked on vulnerability management and endpoint
+                                        hardening programs for clients including Ford Saudi Arabia and Bank of Dubai.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 fade-up" style="transition-delay:0.15s">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-bank"></i></div>
+                                <div>
+                                    <div class="card-title mb-1">Golden SB-Tech</div>
+                                    <p class="card-text mb-0">
+                                        Technical support engineer for live banking payment workflow systems.
+                                        Handled real-time production issue triage, incident escalation, and process automation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h4>Team Expertise</h4>
-        <p>Our team specializes in DevOps, cloud automation (Python, Bash, PowerShell), Blue Team cybersecurity (vulnerability management, incident response), and systems integration for Windows, Linux, and container environments.</p>
+</section>
+
+<hr class="hz-divider">
+
+<!-- ── Team model ── -->
+<section class="mb-5 fade-up">
+    <div class="section-label">Team</div>
+    <h3 class="mb-3">How we're structured</h3>
+    <p class="mb-4">
+        HzorTech runs lean. A typical engagement involves a small, focused group — no layers of management,
+        no handoffs to junior staff after the contract is signed.
+    </p>
+    <div class="row gy-3">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-person-gear"></i></div>
+                    <div class="card-title">Project Lead</div>
+                    <p class="card-text" style="font-size:0.82rem;">Cloud and security specialist. Owns delivery and client communication.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-terminal"></i></div>
+                    <div class="card-title">DevOps Engineer</div>
+                    <p class="card-text" style="font-size:0.82rem;">Pipelines, IaC, containerisation, and automation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-shield-check"></i></div>
+                    <div class="card-title">Security Analyst</div>
+                    <p class="card-text" style="font-size:0.82rem;">Vulnerability assessments, monitoring, and incident response.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="icon-circle mx-auto mb-3"><i class="bi bi-headset"></i></div>
+                    <div class="card-title">Support Engineer</div>
+                    <p class="card-text" style="font-size:0.82rem;">Day-to-day issue triage, documentation, and handover support.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h4>Client-first mindset</h4>
-        <p>We work alongside your developers and operators, maintaining service reliability while transferring knowledge through workshops, documentation, and hand-over sessions.</p>
+    <p class="mt-3" style="font-size:0.85rem; color:var(--dim);">
+        For larger scopes, we extend with trusted contractors. Scope and team size are agreed before work starts.
+    </p>
+</section>
+
+<hr class="hz-divider">
+
+<!-- ── Values ── -->
+<section class="mb-5 fade-up">
+    <div class="section-label">How we work</div>
+    <h3 class="mb-4">Operating principles</h3>
+    <div class="row gy-3">
+        <div class="col-md-6">
+            <div class="d-flex gap-3">
+                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-lock"></i></div>
+                <div>
+                    <strong>Security by default</strong>
+                    <p class="mb-0" style="font-size:0.875rem;">Security controls are built in from the start, not added as an afterthought before go-live.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex gap-3">
+                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-chat-left-text"></i></div>
+                <div>
+                    <strong>Direct communication</strong>
+                    <p class="mb-0" style="font-size:0.875rem;">You talk to the engineers working on your project. No account managers in the middle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex gap-3">
+                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-journal-code"></i></div>
+                <div>
+                    <strong>Documentation and handover</strong>
+                    <p class="mb-0" style="font-size:0.875rem;">Every engagement includes runbooks and knowledge transfer so your team can maintain what we build.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex gap-3">
+                <div class="icon-circle" style="flex-shrink:0"><i class="bi bi-graph-up"></i></div>
+                <div>
+                    <strong>Measured outcomes</strong>
+                    <p class="mb-0" style="font-size:0.875rem;">We agree on success metrics before starting and report against them throughout.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="my-5">
-    <h3>Practical Example Engagement</h3>
-    <p>At Golden SB-Tech, we monitored payment workflows and resolved production issues for banking services in real time. At Senex Security, we reduced high-risk vulnerabilities on more than 30,000 endpoints and supported key clients like Ford Saudi Arabia and Bank of Dubai.</p>
-</div>
+<hr class="hz-divider">
 
-<div class="my-5">
-    <h3>Leadership Profile</h3>
-    <article>
-        <h5>Shara Avakian</h5>
-        <p>Founder & Principal Engineer</p>
-        <ul>
-            <li>Cybersecurity Specialist with experience in vulnerability management, penetration testing support, and incident response</li>
-            <li>Cloud Engineer delivering Python-based compute services, SaaS platform integration, and HPC scheduling systems</li>
-            <li>Technical support operations, including real-time issue resolution, automation, and compliance for banking and enterprise customers</li>
-            <li>Armenian IT and computer science education with ongoing Master’s studies in computer systems</li>
-        </ul>
-    </article>
-</div>
-
-<div class="row my-5">
-    <div class="col-md-6">
-        <h3>Core Technical Stack</h3>
-        <ul>
-            <li>Python, Bash, PowerShell scripting</li>
-            <li>Docker, Kubernetes, infrastructure as code</li>
-            <li>AWS/Azure/GCP, VMware, CI/CD and automation pipelines</li>
-            <li>Cybersecurity tooling: Splunk, ELK, Wazuh, Wireshark, Burp Suite, Nmap</li>
-            <li>Identity and access controls, patch management, endpoint defense</li>
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h3>Office Culture</h3>
-        <p>HzorTech values a learning mindset and a practical approach. We mentor junior engineers in cloud and security skills, while delivering pragmatic solutions that align with customer budgets and performance expectations.</p>
-    </div>
-</div>
-
-<div class="my-5">
-    <h3>Client Results</h3>
-    <p>Example outcomes: reducing vulnerabilities by 35% at scale, raising production availability from 92% to over 99.7%, and deploying secure, compliant cloud services quickly for research and finance clients.</p>
-</div>
-
-<div class="my-5">
-    <h3>Recent Engagements</h3>
-    <ul>
-        <li>Cloud compute scheduling for academic quantum simulations (IIAP National Academy project).</li>
-        <li>Banking transaction monitoring and incident automation in real time (Golden SB-Tech).</li>
-        <li>Risk-based penetration support and endpoint response programs for regional clients (Senex Security).</li>
-    </ul>
-</div>
-
-<div class="my-5">
-    <h3>Operational Principles</h3>
-    <p>Engineering decisions are made with reuse, security, and maintainability in mind. We use short iterations and quick validation loops, mirroring the applied research and support environments in Shara’s experience.</p>
-</div>
+<!-- ── CTA ── -->
+<section class="text-center py-4 fade-up">
+    <h3 class="mb-2">Want to work together?</h3>
+    <p class="mb-4" style="color:var(--muted);">Tell us about your project and we'll figure out if we're a good fit.</p>
+    <a href="{% url 'contact' %}" class="btn btn-primary">Get in touch</a>
+</section>
 
 {% endblock %}
